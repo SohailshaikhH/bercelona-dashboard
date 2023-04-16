@@ -1,0 +1,245 @@
+html,
+body,
+.parent {
+  height: 100%;
+}
+
+.body {
+  border: none;
+  outline: none;
+  line-height: 0;
+  font-size: 14px;
+  color: #424242;
+  box-sizing: border-box;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+.nav-container {
+  z-index: 2;
+  padding: 5px;
+  background-color: #607d8b;
+  box-shadow: 0px 0px 9px 0px;
+}
+.nav-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.brand-name img {
+  width: 45px;
+  margin-left: 8px;
+}
+.brand-logo img {
+  height: 25px;
+  margin-left: 15px;
+}
+.navbar {
+  padding-top: 0px;
+  padding-bottom: 0px;
+  background-color: #607d8b !important;
+}
+.text {
+  display: flex;
+  color: white;
+  cursor: pointer;
+  font-size: 10px;
+  padding-top: 7px;
+  flex-direction: column;
+}
+.profile-image img {
+  width: 30px;
+  cursor: pointer;
+}
+.navbar-nav .nav-link {
+  padding: 0px;
+  color: white;
+}
+.nav-link i {
+  padding: 0px;
+  font-size: 30px;
+}
+a .alarm {
+  margin: -10px;
+  cursor: pointer;
+  padding-left: 12px;
+  padding-right: 20px;
+}
+.prifilename {
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+input[type="search"] {
+  padding: 0px;
+  border: 1px solid;
+  border-radius: 3px;
+}
+/* SIDEBAR */
+.sidetabmenu {
+  top: 55px;
+  z-index: 2;
+  height: 100%;
+  overflow: auto;
+  position: fixed;
+  background: white;
+  box-shadow: 0px 0px 15px 0px;
+}
+
+.sidenavs {
+  width: 64px;
+  box-shadow: 0px 4px 32px -5px;
+}
+.sidenav {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  z-index: 100;
+  display: block;
+  background-color: #ffffff;
+}
+.sidebarmenu {
+  width: 0px;
+  height: 100%;
+  transition: all 300ms ease-in-out;
+  background-color: rgb(255, 255, 255);
+}
+.kit-content {
+  display: flex;
+  overflow: auto;
+  padding-left: 0px;
+  padding-bottom: 150px;
+  list-style-type: none;
+  flex-direction: column;
+}
+
+.Features {
+  z-index: 2;
+}
+
+/* SIDEBAR */
+/* main */
+
+.layout-con {
+  margin-left: 65px;
+  transition: all 300ms ease-in-out;
+}
+.inner-con {
+  padding: 80px 15px;
+}
+.charts {
+  overflow: hidden;
+}
+.cards-color {
+  border: none;
+  background: linear-gradient(229deg, #fd9a77, #fb827a);
+}
+.cards-colors {
+  border: none;
+  background: linear-gradient(229deg, #8edead, #43c6ac);
+}
+.cards-colorss {
+  border: none;
+  background: linear-gradient(248deg, #348ac7, #7474bf);
+}
+.cards-colorz {
+  border: none;
+  background: linear-gradient(67deg, #f15f79, #b24592);
+}
+.back-photo {
+  height: 100px;
+  overflow: hidden;
+  background-color: #348ac7;
+}
+.photo-txt {
+  top: -68px;
+  color: white;
+  font-size: 21px;
+  font-weight: 700;
+  margin-left: 110px;
+  position: relative;
+}
+.back-img {
+  margin: -40px 0 0 25px;
+}
+.profiles-buttons {
+  height: 50px;
+  float: right;
+  min-width: 50px;
+  margin: -25px 18px 0px 0px;
+}
+.progrss-bar {
+  width: 86px;
+  height: 4px;
+  float: right;
+  margin-top: 12px;
+  background: rgb(87, 93, 100);
+}
+.progress-child {
+  width: 50%;
+  height: 4px;
+  background: green;
+}
+.project-icon {
+  font-size: 25px;
+  margin-right: 8px;
+  vertical-align: middle;
+}
+.project-title {
+  font-weight: 600;
+  vertical-align: middle;
+}
+.project-detail {
+  vertical-align: middle;
+}
+.chat-heading {
+  margin: 0;
+  font-weight: 600;
+}
+.chat-img {
+  width: 35px;
+  margin-left: 10px;
+  margin-bottom: 6px;
+}
+.chats-massage {
+  font-size: 16px;
+  padding: 6px 12px;
+  border-radius: 10px;
+  vertical-align: middle;
+  background-color: rgb(171, 211, 185);
+}
+.chats-massagesecond {
+  font-size: 16px;
+  padding: 6px 12px;
+  border-radius: 10px;
+  vertical-align: middle;
+  background-color: rgb(178, 188, 194);
+}
+.chat-imsflt {
+  float: right;
+}
+.chatmsg {
+  float: right;
+}
+.clearchat::after {
+  content: "";
+  clear: both;
+  display: block;
+}
+.pin-logo {
+  width: 40px;
+  height: 100%;
+  font-size: 30px;
+  line-height: 40px;
+  text-align: center;
+  display: inline-block;
+  color: rgb(175, 174, 174);
+  border-right: 1px solid #dce2e7;
+}
+.textinput {
+  width: 100%;
+  border: 0 none;
+  font-size: 14px;
+  outline: 0 none;
+  color: #757575;
+  background-color: transparent;
+}
+
+/* mian */

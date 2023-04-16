@@ -1,0 +1,609 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaquery.css" />
+    <title>Barcelona</title>
+  </head>
+  <body>
+    <div class="parent">
+      <div class="header">
+        <div
+          class="nav-container position-fixed d-flex align-items-center justify-content-between w-100 shadow"
+        >
+          <div class="nav-wrapper">
+            <div class="d-flex align-items-center">
+              <div class="brand-name">
+                <a href="" class="nav-brand">
+                  <img
+                    src="https://www.primefaces.org/barcelona-ng/assets/layout/images/logo.png"
+                    alt="name"
+                  />
+                </a>
+              </div>
+              <div class="brand-logo">
+                <a href="" class="nav-brand">
+                  <img
+                    src="https://www.primefaces.org/barcelona-ng/assets/layout/images/logo-text.svg"
+                    alt="Barcelona"
+                  />
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="d-flex align-items-center justify-content-end w-100">
+            <nav class="navbar-nav navbar-expand-md">
+              <div class="container-fluid">
+                <button
+                  class="navbar-toggler"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#navbarTogglerDemo01"
+                  aria-controls="navbarTogglerDemo01"
+                  aria-expanded="false"
+                  aria-label="Toggle navigation"
+                >
+                  <span class="fa fa-bars"></span>
+                </button>
+                <div
+                  class="sidebar collapse navbar-collapse"
+                  id="navbarTogglerDemo01"
+                >
+                  <form class="d-flex" role="search">
+                    <input
+                      class="form-control"
+                      type="search"
+                      placeholder=""
+                      aria-label="Search"
+                    />
+                  </form>
+                  <ul
+                    class="navbar-nav flex-row-reverse justify-content-evenly"
+                  >
+                    <li class="nav-item profile-last">
+                      <a class="nav-link text">
+                        <span class="prifilename">Clair White</span>
+                        <span class="double">Admin System</span>
+                      </a>
+                    </li>
+                    <li>
+                      <i class="profile-image">
+                        <img
+                          src="https://www.primefaces.org/barcelona-ng/assets/layout/images/profile-image.png"
+                          alt=""
+                        />
+                      </i>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link active" aria-current="page" href="#">
+                        <i class="fa fa-cog setting"></i>
+                      </a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link envelope" href="#">
+                        <i class="fa fa-envelope"></i>
+                      </a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link alarm">
+                        <i class="fa fa-clock-o"></i>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </nav>
+          </div>
+        </div>
+      </div>
+      <div class="sidetabmenu">
+        <div class="side-nav d-flex bg-light h-100 position-fixed">
+          <div class="sidenavs">
+            <ul class="nav flex-column text-center">
+              <li class="nav-item" onclick="toggleNav()">
+                <a class="border-top-none nav-link" role="button">
+                  <i
+                    class="bi bi-house fs-4 fw-bolder text-secondary text-secondary"
+                  ></i>
+                </a>
+              </li>
+              <li class="nav-item" onclick="toggleNav()">
+                <a class="border-top-none nav-link" role="button">
+                  <i class="bi bi-archive fs-4 fw-bolder text-secondary"></i>
+                </a>
+              </li>
+              <li onclick="toggleNav()">
+                <a class="border-top-none nav-link" role="button">
+                  <i class="bi bi-calendar fs-4 fw-bolder text-secondary"></i>
+                </a>
+              </li>
+              <li onclick="toggleNav()">
+                <a class="border-top-none nav-link" role="button">
+                  <i class="bi bi-bar-chart fs-4 fw-bolder text-secondary"></i>
+                </a>
+              </li>
+              <li onclick="toggleNav()">
+                <a class="border-top-none nav-link" role="button">
+                  <i class="bi bi-person fs-4 fw-bolder text-secondary"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="side-con bg-light h-100" id="side-content">
+            <div class="sidebarmenu overflow-auto d-flex flex-column">
+              <div class="d-flex justify-content-between align-items-center">
+                <span class="fs-5 fw-bold">Features</span>
+                <a
+                  class="border-top-none nav-link"
+                  role="button"
+                  onclick="toggleNav()"
+                >
+                  <i class="bi bi-list fs-4 fw-bolder text-secondary"></i>
+                </a>
+              </div>
+              <ul class="kit-content mb-auto">
+                <li></li>
+                <li class="nav-item">
+                  <a
+                    href="#"
+                    class="nav-link text-dark fs-6 p-1"
+                    aria-current="page"
+                  >
+                    <i class="bi bi-house fs-4 fw-bolder mx-2"></i>
+                    <span class="">Dashboard</span>
+                  </a>
+                </li>
+                <li>
+                  <div
+                    class="accordion accordion-flush mx-2"
+                    id="accordionExample"
+                  >
+                    <div class="accordion-item border-">
+                      <h2 class="accordion-header" id="headingOne">
+                        <button
+                          class="accordion-button p-1"
+                          type="button"
+                          data-bs-toggle="collapse"
+                          data-bs-target="#collapseOne"
+                          aria-expanded="true"
+                          aria-controls="collapseOne"
+                        >
+                          <i class="bi bi-star px-2 fs-5"></i>
+                          <span class="px-2">Ui kit</span>
+                        </button>
+                      </h2>
+                      <div
+                        id="collapseOne"
+                        class="accordion-collapse collapse show"
+                        aria-labelledby="headingOne"
+                        data-bs-parent="#accordionExample"
+                      >
+                        <div class="accordion-body p-0">
+                          <ul
+                            class="nav d-flex flex-column gap-2 text-decoration-none"
+                          >
+                            <li class="nav-item">
+                              <i class="bi bi-textarea-resize px-2"></i>
+                              <span class="">Form Layout</span>
+                            </li>
+                            <li class="nav-item">
+                              <i class="bi bi-input-cursor-text px-2"></i>
+                              <span class="">Input</span>
+                            </li>
+                            <li class="nav-item">
+                              <i class="bi bi-fan px-2"></i>
+                              <span class="">Form Label</span>
+                            </li>
+                            <li class="nav-item">
+                              <i class="bi bi-bug px-2"></i>
+                              <span class="">Invalid state</span>
+                            </li>
+                            <li class="nav-item">
+                              <i class="bi bi-menu-button px-2"></i>
+                              <span class="">button</span>
+                            </li>
+                            <li class="nav-item">
+                              <i class="bi bi-file-spreadsheet-fill px-2"></i>
+                              <span class="">Table</span>
+                            </li>
+                            <li class="nav-item">
+                              <i class="bi bi-card-checklist px-2"></i>
+                              <span class="">List</span>
+                            </li>
+                            <li class="nav-item">
+                              <i class="bi bi-signpost-2-fill px-2"></i>
+                              <span class="">Tree</span>
+                            </li>
+                            <li class="nav-item">
+                              <i class="bi bi-align-end px-2"></i>
+                              <span class="">Panel</span>
+                            </li>
+                            <li class="nav-item">
+                              <i class="bi bi-cast px-2"></i>
+                              <span class="">Media</span>
+                            </li>
+                            <li class="nav-item">
+                              <i class="bi bi-cloud-moon-fill px-2"></i>
+                              <span class="">Overlay</span>
+                            </li>
+                            <li class="nav-item">
+                              <i class="bi bi-list px-2"></i>
+                              <span class="">Menu</span>
+                            </li>
+                            <li class="nav-item">
+                              <i class="bi bi-mastodon px-2"></i>
+                              <span class="">Massage</span>
+                            </li>
+                            <li class="nav-item">
+                              <i class="bi bi-archive px-2"></i>
+                              <span class="">File</span>
+                            </li>
+                            <li class="nav-item">
+                              <i class="bi bi-bar-chart-steps px-2"></i>
+                              <span class="">Chart</span>
+                            </li>
+                            <li class="nav-item">
+                              <i class="bi bi-bar-chart-steps px-2"></i>
+                              <span class="">Misc</span>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="headingTwo">
+                        <button
+                          class="accordion-button p-1 collapsed"
+                          type="button"
+                          data-bs-toggle="collapse"
+                          data-bs-target="#collapseTwo"
+                          aria-expanded="false"
+                          aria-controls="collapseTwo"
+                        >
+                          <i class="bi bi-emoji-smile-fill px-2 fs-5"></i>
+                          <span class="px-2">Prime blocks</span>
+                        </button>
+                      </h2>
+                      <div
+                        id="collapseTwo"
+                        class="accordion-collapse collapse"
+                        aria-labelledby="headingTwo"
+                        data-bs-parent="#accordionExample"
+                      >
+                        <div class="accordion-body"></div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <div class="accordion-header" id="headingThree">
+                        <button
+                          class="accordion-button p-1 collapsed"
+                          type="button"
+                          data-bs-toggle="collapse"
+                          data-bs-target="#collapseThree"
+                          aria-expanded="false"
+                          aria-controls="collapseThree"
+                        >
+                          <i class="bi bi-reception-3 px-2 fs-5"></i>
+                          <span class="px-2">Utilities</span>
+                        </button>
+                      </div>
+                      <div
+                        id="collapseThree"
+                        class="accordion-collapse collapse"
+                        aria-labelledby="headingThree"
+                        data-bs-parent="#accordionExample"
+                      >
+                        <div class="accordion-body"></div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <div class="accordion-header" id="headingfour">
+                        <button
+                          class="accordion-button p-1 collapsed"
+                          type="button"
+                          data-bs-toggle="collapse"
+                          data-bs-target="#collapsefour"
+                          aria-expanded="false"
+                          aria-controls="collapsefour"
+                        >
+                          <i class="bi bi-file-break-fill px-2 fs-5"></i>
+                          <span class="px-2">Pages</span>
+                        </button>
+                      </div>
+                      <div
+                        id="collapsefour"
+                        class="accordion-collapse collapse"
+                        aria-labelledby="headingfour"
+                        data-bs-parent="#accordionExample"
+                      >
+                        <div class="accordion-body"></div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <div class="accordion-header" id="headingfive">
+                        <button
+                          class="accordion-button p-1 collapsed"
+                          type="button"
+                          data-bs-toggle="collapse"
+                          data-bs-target="#collapsefive"
+                          aria-expanded="false"
+                          aria-controls="collapsefive"
+                        >
+                          <i class="bi bi-pip-fill px-2 fs-5"></i>
+                          <span class="px-2">Hierarchy</span>
+                        </button>
+                      </div>
+                      <div
+                        id="collapsefive"
+                        class="accordion-collapse collapse"
+                        aria-labelledby="headingfive"
+                        data-bs-parent="#accordionExample"
+                      >
+                        <div class="accordion-body"></div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="layout-con" id="layout-content" onclick="closenavbar()">
+        <div class="inner-con">
+          <div class="charts">
+            <div class="row">
+              <div class="col-sm-12 col-md-6 col-lg-3 mb-2">
+                <div class="card shadow cards-color text-light">
+                  <div class="card-body d-flex justify-content-between p-1">
+                    <div>
+                      <h5 class="mb-0 align-self-start fs-6">Unread Massage</h5>
+                      <span class="fs-5 fw-bold">150</span>
+                    </div>
+                    <div>
+                      <h5 class="fs-6 mb-0">+30%</h5>
+                    </div>
+                  </div>
+                  <img
+                    style="width: 180px"
+                    src="https://www.primefaces.org/barcelona-ng/assets/layout/images/dashboard/chart-1.svg"
+                    alt=""
+                  />
+                </div>
+              </div>
+              <div class="col-sm-12 col-md-6 col-lg-3 mb-2">
+                <div class="card shadow cards-colors text-light">
+                  <div class="card-body d-flex justify-content-between p-1">
+                    <div>
+                      <h5 class="mb-0 align-self-start fs-6">checks-ins</h5>
+                      <span class="fs-5 fw-bold">532</span>
+                    </div>
+                    <div>
+                      <h5 class="fs-6 mb-0">+45%</h5>
+                    </div>
+                  </div>
+                  <img
+                    style="width: 180px"
+                    src="https://www.primefaces.org/barcelona-ng/assets/layout/images/dashboard/chart-1.svg"
+                    alt=""
+                  />
+                </div>
+              </div>
+              <div class="col-sm-12 col-md-6 col-lg-3 mb-2">
+                <div class="card shadow cards-colorss text-light">
+                  <div class="card-body d-flex justify-content-between p-1">
+                    <div>
+                      <h5 class="mb-0 align-self-start fs-6">file sync</h5>
+                      <span class="fs-5 fw-bold">640</span>
+                    </div>
+                    <div>
+                      <h5 class="fs-6 mb-0">-75%</h5>
+                    </div>
+                  </div>
+                  <img
+                    style="width: 180px"
+                    src="https://www.primefaces.org/barcelona-ng/assets/layout/images/dashboard/chart-1.svg"
+                    alt=""
+                  />
+                </div>
+              </div>
+              <div class="col-sm-12 col-md-6 col-lg-3 mb-2">
+                <div class="card shadow cards-colorz text-light">
+                  <div class="card-body d-flex justify-content-between p-1">
+                    <div>
+                      <h5 class="mb-0 align-self-start fs-6">user online</h5>
+                      <span class="fs-5 fw-bold">5251</span>
+                    </div>
+                    <div>
+                      <h5 class="fs-6 mb-0">+25%</h5>
+                    </div>
+                  </div>
+                  <img
+                    style="width: 180px"
+                    src="https://www.primefaces.org/barcelona-ng/assets/layout/images/dashboard/chart-1.svg"
+                    alt=""
+                  />
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-12 col-sm-12">
+                <div class="card">
+                  <div class="back-photo">
+                    <img
+                      src="244742-snow-covered-mountain-near-pine-trees-at-daytime-nature-forest.jpg"
+                      class="card-img-top"
+                      alt="mountains"
+                    />
+                  </div>
+                  <div class="profile-card">
+                    <img
+                      class="back-img"
+                      src="https://www.primefaces.org/barcelona-ng/assets/layout/images/profile-image.png"
+                      alt="asdasd"
+                    />
+                    <button
+                      class="profiles-buttons btn btn-secondary fs-4 fw-bolder pt-0"
+                    >
+                      +
+                    </button>
+                    <div class="photo-txt">
+                      <p class="phot-text">Clair White</p>
+                    </div>
+                    <ul class="list-group">
+                      <li class="list-group-item rounded-0">
+                        <div class="progrss-bar">
+                          <div class="progress-child" style="width: 50%"></div>
+                        </div>
+                        <i class="bi bi-list-ul fw-bolder project-icon"></i>
+                        <span class="project-title">Tasks</span>
+                        <span class="project-detail">3 open</span>
+                      </li>
+                      <li class="list-group-item rounded-0">
+                        <div class="progrss-bar">
+                          <div class="progress-child" style="width: 20%"></div>
+                        </div>
+                        <i
+                          class="bi bi-currency-dollar fw-bolder project-icon"
+                        ></i>
+                        <span class="project-title">Revenue </span>
+                        <span class="project-detail">+20%</span>
+                      </li>
+                      <li class="list-group-item rounded-0">
+                        <div class="progrss-bar">
+                          <div class="progress-child" style="width: 65%"></div>
+                        </div>
+                        <i class="bi bi-cash fw-bolder project-icon"></i>
+                        <span class="project-title">Payment</span>
+                        <span class="project-detail">24 New</span>
+                      </li>
+                      <li class="list-group-item rounded-0">
+                        <div class="progrss-bar">
+                          <div class="progress-child" style="width: 80%"></div>
+                        </div>
+                        <i
+                          class="bi bi-briefcase-fill fw-bolder project-icon"
+                        ></i>
+                        <span class="project-title">Clients</span>
+                        <span class="project-detail">+80%</span>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-8 col-md-12 col-sm-12">
+                <div class="chat shadow">
+                  <p class="chat-heading fs-5 p-2">Chat</p>
+                  <div class="main-chats">
+                    <ul class="list-group">
+                      <li class="list-group-item border-0 clearchat">
+                        <img
+                          class="chat-img"
+                          src="https://www.primefaces.org/barcelona-ng/assets/layout/images/avatar2.png"
+                          alt=""
+                        />
+                        <span class="chats-massage"
+                          >Retro occupy organic, stumptown shabby chic pour-over
+                          roof party DIY normcore.</span
+                        >
+                      </li>
+                      <li class="list-group-item border-0 clearchat">
+                        <img
+                          class="chat-img chatmsg"
+                          src="https://www.primefaces.org/barcelona-ng/assets/layout/images/avatar2.png"
+                          alt=""
+                        />
+                        <span class="chats-massagesecond chatmsg"
+                          >Retro occupy organic, stumptown shabby chic pour-over
+                          roof party DIY normcore.</span
+                        >
+                      </li>
+                      <li class="list-group-item border-0 clearchat">
+                        <img
+                          class="chat-img"
+                          src="https://www.primefaces.org/barcelona-ng/assets/layout/images/avatar2.png"
+                          alt=""
+                        />
+                        <span class="chats-massage"
+                          >Retro occupy organic, stumptown shabby chic pour-over
+                          roof party DIY normcore.</span
+                        >
+                      </li>
+                      <li class="list-group-item border-0 clearchat">
+                        <img
+                          class="chat-img chatmsg"
+                          src="https://www.primefaces.org/barcelona-ng/assets/layout/images/avatar2.png"
+                          alt=""
+                        />
+                        <span class="chats-massagesecond chatmsg"
+                          >Retro occupy organic, stumptown shabby chic pour-over
+                          roof party DIY normcore.</span
+                        >
+                      </li>
+                      <li class="list-group-item border-0 clearchat">
+                        <span class="chats-massagesecond chatmsg"
+                          >Retro occupy organic, stumptown shabby chic pour-over
+                          roof party DIY normcore.</span
+                        >
+                      </li>
+                      <li class="list-group-item border-0 clearchat">
+                        <img
+                          class="chat-img"
+                          src="https://www.primefaces.org/barcelona-ng/assets/layout/images/avatar2.png"
+                          alt=""
+                        />
+                        <span class="chats-massage"
+                          >Retro occupy organic, stumptown shabby chic pour-over
+                          roof party DIY normcore.</span
+                        >
+                      </li>
+                      <li class="list-group-item border-0 clearchat">
+                        <span class="chats-massagesecond chatmsg"
+                          >Retro occupy organic, stumptown shabby chic pour-over
+                          roof party DIY normcore.</span
+                        >
+                      </li>
+                    </ul>
+                    <div class="text-chat border-1">
+                      <div class="input-group mb-3">
+                        <span
+                          class="input-group-text bg-light"
+                          id="basic-addon1"
+                          ><i class="bi bi-paperclip fs-5 fw-bold"></i
+                        ></span>
+                        <input
+                          type="text"
+                          class="form-control text-decoration-none border rounded-2"
+                          placeholder="Write a massage"
+                          aria-label="Write a massage"
+                          aria-describedby="basic-addon1"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="scripts.js"></script>
+  </body>
+</html>

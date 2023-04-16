@@ -1,0 +1,37 @@
+/*  */
+
+@media (max-width: 1200px) {
+}
+
+@media (max-width: 767px) {
+  .sidebar {
+    top: 60px;
+    margin: 0;
+    right: 15px;
+    width: 250px;
+    padding: 8px;
+    overflow: hidden;
+    position: absolute;
+    border-radius: 5px;
+    list-style-type: none;
+    animation-duration: 0.5s;
+    -moz-animation-duration: 0.5s;
+    background-color: #175891de;
+    -webkit-animation-duration: 0.5s;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+  }
+  .side-nav {
+    width: 3.4rem !important;
+  }
+}
+@media (max-width: 1200px) {
+  .layout-con {
+    margin-left: 65px !important;
+    transition: all 300ms ease-in-out;
+  }
+}
+@media (max-width: 575px) {
+  .layout-con {
+    margin-left: 50px !important;
+  }
+}
